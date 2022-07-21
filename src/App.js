@@ -14,10 +14,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/myshope" element={<Dashboard />} />
-            <Route
-              path="/myshope/products/:userId"
-              element={<ProductDetailsPage />}
-            />
+            <Route path="/products/:userId" element={<ProductDetailsPage />} />
           </Routes>
         </div>
       </BrowserRouter>
