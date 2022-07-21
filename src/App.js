@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/myshope" element={<Dashboard />} />
             <Route
-              path="myshope/products/:userId"
+              path="/myshope/products/:userId"
               element={<ProductDetailsPage />}
             />
           </Routes>
