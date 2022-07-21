@@ -12,7 +12,9 @@ function Dashboard() {
   const selectCategory = (e) => {
     const getSelectedProducts = async () => {
       const selectedProducts = await fetch(
-        `https://fakestoreapi.com/products/category/${e.target.value}`
+        `https://fakestoreapi.com/products/category/${e.target.getAttribute(
+          "value"
+        )}`
       ).then((Response) => Response.json());
       setSelectedProducts(selectedProducts);
     };
@@ -26,10 +28,13 @@ function Dashboard() {
     <div className="m-3">
       <div className="row">
         {storeCategories.map((item) => (
-          <div className="col col-sm-2 border  m-2">
-            <button className="btn  mx-3" value={item} onClick={selectCategory}>
-              {item}
-            </button>
+          <div
+            type="button"
+            className="col col-sm-2 border  m-2"
+            value={item}
+            onClick={selectCategory}
+          >
+            {item}
           </div>
         ))}
       </div>
