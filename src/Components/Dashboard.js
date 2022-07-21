@@ -24,15 +24,17 @@ function Dashboard() {
 
   return (
     <div className="m-3">
-      <div>
+      <div className="row">
         {storeCategories.map((item) => (
-          <button
-            className="btn  btn-info mx-3"
-            value={item}
-            onClick={selectCategory}
-          >
-            {item}
-          </button>
+          <div className="col col-sm-2">
+            <button
+              className="btn  btn-info mx-3"
+              value={item}
+              onClick={selectCategory}
+            >
+              {item}
+            </button>
+          </div>
         ))}
       </div>
       <hr />
