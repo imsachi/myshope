@@ -26,12 +26,8 @@ function Dashboard() {
     <div className="m-3">
       <div className="row">
         {storeCategories.map((item) => (
-          <div className="col col-sm-2">
-            <button
-              className="btn  btn-info mx-3"
-              value={item}
-              onClick={selectCategory}
-            >
+          <div className="col col-sm-2 border  m-2">
+            <button className="btn  mx-3" value={item} onClick={selectCategory}>
               {item}
             </button>
           </div>
