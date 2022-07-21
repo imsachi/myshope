@@ -18,7 +18,7 @@ function Products({ productInfo, goToProductDetailsPage }) {
         style={{ textAlign: "left" }}
       >
         <Link
-          to={`myshope/products/${productInfo.id}`}
+          to={`/products/${productInfo.id}`}
           className="card-title"
           style={{ textDecoration: "none" }}
         >
@@ -36,7 +36,7 @@ function Products({ productInfo, goToProductDetailsPage }) {
         <hr />
         <div className=" mt-auto">
           <Link
-            to={`myshope/products/${productInfo.id}`}
+            to={`/products/${productInfo.id}`}
             className="btn "
             onClick={() => addToCart()}
             style={{ backgroundColor: "pink" }}
