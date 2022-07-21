@@ -9,7 +9,7 @@ function Navbar() {
       <div className="row ">
         <div className="col col-lg-3" name="Brandname">
           <a className=" ">
-            <h3>taskzero</h3>
+            <h3>sachiShope</h3>
           </a>
         </div>
         <div className="col-md-auto">
